@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-color: rgb(220, 220, 220);
+  font-family: 'Roboto', sans-serif;
+}
+
+.article {
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+.unit_article {
+  background-color: rgba(200, 240, 240, 0.8);
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li {
+  list-style-type: disc;
+}

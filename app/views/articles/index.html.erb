@@ -1,0 +1,22 @@
+<%= link_to'add an article', new_article_path(@article) %>
+
+<h1>Tout les articles</h1>
+<div class="article">
+  <ul>
+    <%= @articles.each do |article| %>
+      <li>
+        <div class="unit_article">
+        <h3><%= article.title %></h3>
+          <p>
+            <%= link_to ' View', article_path(article) %>
+            <%= link_to ' Edit', edit_article_path(article) %>
+            <%= link_to 'Delete',  article_path(article),
+            method: :delete,
+            data: { confirm: "Are you sure ?" } %>
+          </p>
+          <p><%= article.content %></p>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
